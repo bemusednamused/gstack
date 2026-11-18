@@ -1,0 +1,47 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m opskit init-config:*)",
+      "Bash(python -m opskit preflight:*)",
+      "Bash(python -m opskit scan:*)",
+      "Bash(python -m opskit compare:*)",
+      "Bash(python -m opskit backup:*)",
+      "Bash(python -m opskit reconcile:*)",
+      "Bash(python -m opskit verify:*)",
+      "Bash(python -m opskit hermes-health:*)",
+      "Bash(python -m opskit hermes-snapshot:*)",
+      "Bash(python -m opskit hermes-stop:*)",
+      "Bash(python3 -m opskit init-config:*)",
+      "Bash(python3 -m opskit preflight:*)",
+      "Bash(python3 -m opskit scan:*)",
+      "Bash(python3 -m opskit compare:*)",
+      "Bash(python3 -m opskit backup:*)",
+      "Bash(python -m unittest discover:*)",
+      "Bash(python3 -m unittest discover:*)",
+      "Bash(hermes --version)",
+      "Bash(hermes doctor)",
+      "Bash(hermes status:*)",
+      "Bash(hermes gateway status:*)",
+      "Bash(hermes cron list:*)",
+      "Bash(hermes config show:*)",
+      "Bash(hermes update --check:*)",
+      "Bash(git pull:*)",
+      "Bash(git status:*)",
+      "Bash(git log:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf:*)",
+      "Bash(rm -r:*)",
+      "Bash(rmdir:*)",
+      "Bash(robocopy:*)",
+      "Bash(rsync:*)",
+      "Bash(Remove-Item:*)",
+      "Bash(del /s:*)",
+      "Bash(hermes update)",
+      "Bash(hermes update --force:*)",
+      "Bash(hermes --yolo:*)",
+      "Bash(hermes chat --yolo:*)",
+      "Bash(hermes config set approvals.mode off:*)"
+    ]
+  }
+}
